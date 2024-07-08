@@ -6,7 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import gwaliorImage from '../../assets/Image1.webp';
 import mpImage from '../../assets/Image1.webp';
 import indiaImage from '../../assets/Image1.webp';
-
+import ConferenceDetails from './ConferenceDetails';
+import ObjectiveComponent from './ObjectiveComponent';
 const HomePage = () => {
   const settings = {
     dots: true,
@@ -30,6 +31,7 @@ const HomePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
+<>
     <Box className="home-page" mt={0} pt={0} overflow="hidden"> {/* Ensure no top margin or padding */}
       <Slider {...settings}>
         <Box height="100vh" overflow="hidden"> {/* Set height to full viewport height */}
@@ -109,6 +111,9 @@ const HomePage = () => {
         </Box>
       </Slider>
     </Box>
+<ConferenceDetails></ConferenceDetails>
+<ObjectiveComponent></ObjectiveComponent>
+</>
   );
 };
 
