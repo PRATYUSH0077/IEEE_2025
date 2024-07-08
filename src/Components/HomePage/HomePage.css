@@ -1,0 +1,21 @@
+.home-page {
+    height: 100vh; /* Ensures the component takes full viewport height */
+    overflow: hidden; /* Hides any overflow content */
+  }
+  .slider-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
+  }
+  

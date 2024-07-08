@@ -1,26 +1,56 @@
-src/styles/Header.css
+/* src/components/Header.css */
+
 .header {
-    background-color: #333;
-    padding: 1rem;
+    font-size: 20px; /* Example larger font size */
+    font-weight: bold; /* Make text bold */
   }
   
   .navbar {
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
   
   .nav-links {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 1rem;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
   }
   
   .nav-links a {
-    color: #fff;
     text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    text-decoration: underline;
+    color: #66C6F1; /* Example hover color */
   }
-  /* src/styles/Header.css
+  
+  /* Styles for Drawer */
+  .drawer-content {
+    padding: 20px;
+  }
+  
+  .drawer-content a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .drawer-content a:hover {
+    background-color: #F3F3F3; /* Example hover background color */
+  }
+  
