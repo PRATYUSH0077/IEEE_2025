@@ -1,0 +1,19 @@
+/* Tracks.css */
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+button>svg {
+    margin-left: 10px;
+    /* Adjust spacing between text and icon */
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}

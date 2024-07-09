@@ -2,18 +2,18 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Box, 
-  Flex, 
-  IconButton, 
-  useDisclosure, 
-  Drawer, 
-  DrawerBody, 
-  DrawerHeader, 
-  DrawerOverlay, 
-  DrawerContent, 
-  DrawerCloseButton, 
-  VStack 
+import {
+  Box,
+  Flex,
+  IconButton,
+  useDisclosure,
+  Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  VStack
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import './Header.css'; // Import your CSS file
@@ -23,9 +23,10 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check
   const navLinks = [
     { to: '/', text: 'Home' },
-    { to: '/venue', text: 'Venue' },
+    { to: '/tracks', text: 'Tracks' },
     { to: '/committee', text: 'Committee' },
     { to: '/submission', text: 'Submission' },
+    { to: '/venue', text: 'Venue' },
     { to: '/contact', text: 'Contact' },
   ];
 

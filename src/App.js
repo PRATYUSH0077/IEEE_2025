@@ -6,6 +6,8 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomePage from './Components/HomePage/HomePage';
 import Venue from './Components/Venue/Venue';
+import Submission from './Components/Submission/Submission';
+import Tracks from './Components/Tracks/Tracks';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/venue" element={<Venue />} />
+          <Route path="/submission" element={<Submission />} />
+          <Route path="/tracks" element={<Tracks />} />
           {/* Add other routes here */}
         </Routes>
         <Footer />
