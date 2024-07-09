@@ -24,17 +24,17 @@ const ConferenceDetails = () => (
               <div className="col-sm-6">
                 <p><i className="Icon Icon-map Icon--32px text-primary" aria-hidden="true"></i></p>
                 <p style={{ fontSize: '20px' }} className="headColor">Where</p>
-                <p> Shri Ramswaroop Memorial College of Engineering &amp; Management </p>
-                <p> Tiwariganj, Ayodhya Road, Lucknow, U.P., India-226028</p>
+                <p> ABV-Indian Institute of Information Technology &amp; Management </p>
+                <p> Gwalior, Morena Link Road, Gwalior, Madhya Pradesh, India,474015</p>
               </div>
               <div className="col-sm-6">
                 <p><i className="Icon Icon-clock Icon--32px text-primary" aria-hidden="true"></i></p>
                 <p style={{ fontSize: '20px' }} className="headColor">When</p>
                 <p> Friday to Sunday</p>
-                <p>Nov 29th to Dec 1st, 2024 </p>
+                <p>7-9 February, 2025 </p>
               </div>
             </div>
-            <div className=""> <a style={{ cursor: 'pointer' }} className="btn btn-primary text-uppercase u-MarginBottom10 u-LetterSpacing2" onClick={loadabouUs}> LEARN MORE ABOUT ORGANIZERS</a> </div>
+            {/* <div className=""> <a style={{ cursor: 'pointer' }} className="btn btn-primary text-uppercase u-MarginBottom10 u-LetterSpacing2" onClick={loadabouUs}> LEARN MORE ABOUT ORGANIZERS</a> </div> */}
           </div>
         </div>
       </div>
