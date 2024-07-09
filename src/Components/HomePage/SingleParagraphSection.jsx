@@ -30,9 +30,7 @@ const SingleParagraphSection = ({ title, content, imageSrc }) => (
               {content}
             </p>
             <div>
-              <a style={{ cursor: 'pointer' }} className="btn btn-primary text-uppercase u-MarginBottom10 u-LetterSpacing2" onClick={loadabouUs}>
-                LEARN MORE ABOUT ORGANIZERS
-              </a>
+             
             </div>
           </div>
           <div className="col-sm-6" style={{ padding: '20px', textAlign: 'center' }}>

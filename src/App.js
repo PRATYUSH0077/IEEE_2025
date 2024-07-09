@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomePage from './Components/HomePage/HomePage';
 import Venue from './Components/Venue/Venue';
+import CommitteePage from './Components/Committee/Committee';
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/venue" element={<Venue />} />
+          <Route path="/committee" element={<CommitteePage />} />
+
           {/* Add other routes here */}
         </Routes>
         <Footer />
