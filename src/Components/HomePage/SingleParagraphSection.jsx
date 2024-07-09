@@ -1,9 +1,10 @@
 import React from 'react';
+
 const loadabouUs = () => {
-    // Define the logic for loadabouUs function here
-    console.log('Load About Us function executed');
-  };
-const SingleParagraphSection = ({ title, content }) => (
+  console.log('Load About Us function executed');
+};
+
+const SingleParagraphSection = ({ title, content, imageSrc }) => (
   <div style={{ marginTop: '144px' }}>
     <section
       style={{
@@ -21,7 +22,7 @@ const SingleParagraphSection = ({ title, content }) => (
           className="row"
           style={{ boxShadow: '0px 0px 16px 0px #757575b3', padding: '10px', borderRadius: '20px', background: 'white' }}
         >
-          <div className="col-sm-12" style={{ padding: '20px' }}>
+          <div className="col-sm-6" style={{ padding: '20px' }}>
             <h1 className="u-MarginTop0 u-sm-MarginTop30 u-Weight700" style={{ borderBottom: '5px solid #d5d5d5', fontSize: '36px' }}>
               {title}
             </h1>
@@ -33,6 +34,9 @@ const SingleParagraphSection = ({ title, content }) => (
                 LEARN MORE ABOUT ORGANIZERS
               </a>
             </div>
+          </div>
+          <div className="col-sm-6" style={{ padding: '20px', textAlign: 'center' }}>
+            <img src={imageSrc} alt="Event" style={{ maxWidth: '100%', borderRadius: '10px' }} />
           </div>
         </div>
       </div>

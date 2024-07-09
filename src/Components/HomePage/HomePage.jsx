@@ -8,6 +8,8 @@ import mpImage from '../../assets/Image1.webp';
 import indiaImage from '../../assets/Image1.webp';
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
+import ImportantDates from './ImportantDates';
+import ContactUs from './ContactUs';
 const HomePage = () => {
   const settings = {
     dots: true,
@@ -113,6 +115,8 @@ const HomePage = () => {
     </Box>
 <ConferenceDetails></ConferenceDetails>
 <ObjectiveComponent></ObjectiveComponent>
+<ImportantDates></ImportantDates>
+<ContactUs></ContactUs>
 </>
   );
 };
