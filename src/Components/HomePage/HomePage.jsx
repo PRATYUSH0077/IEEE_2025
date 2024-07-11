@@ -3,9 +3,9 @@ import { Box, Text, Image, useBreakpointValue } from '@chakra-ui/react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import gwaliorImage from '../../assets/Image1.webp'; // Adjust these paths to your actual images
-import mpImage from '../../assets/Image1.webp';
-import indiaImage from '../../assets/Image1.webp';
+import gwaliorImage from '../../assets/clg.jpg'; // Adjust these paths to your actual images
+import mpImage from '../../assets/fort.jpg';
+import indiaImage from '../../assets/fort2.jpg';
 import mpLogo from '../../assets/MP-logo.png'; // Adjust the path to your MP logo image
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
@@ -20,7 +20,7 @@ const HomePage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 768,
@@ -48,129 +48,50 @@ const HomePage = () => {
     <>
       <Box className="home-page" mt={0} pt={0} overflow="hidden">
         <Slider {...settings}>
-          <Box
-            height="100vh"
-            overflow="hidden"
-            position="relative"
-          >
-            <Image
-              src={gwaliorImage}
-              alt="Gwalior"
-              w="100%"
-              h="100%"
-              objectFit="cover"
-            />
-            <Box
-              position="absolute"
-              bottom="10%"
-              left="50%"
-              transform="translateX(-50%)"
-              textAlign="center"
-              color="white"
-              p={4}
-              bg="rgba(0, 0, 0, 0.5)"
-              borderRadius="md"
-            >
-              <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
-                IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
-              </Text>
-              <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
-              </div>
-              <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
-                Being Jointly organized by:
-              </Text>
-              <Box textAlign="center" mt={2}>
-                {organizingInstitutions.map((inst, index) => (
-                  <Text key={index} fontSize={isMobile ? 'sm' : 'md'}>{inst}</Text>
-                ))}
+          {[gwaliorImage, mpImage, indiaImage].map((image, idx) => (
+            <Box key={idx} height="100vh" overflow="hidden" position="relative">
+              <Image
+                src={image}
+                alt={`Slide ${idx + 1}`}
+                w="100%"
+                h="100%"
+                objectFit="cover"
+              />
+              <Box
+                position="absolute"
+                bottom="10%"
+                left="50%"
+                transform="translateX(-50%)"
+                textAlign="center"
+                color="white"
+                p={4}
+                bg="rgba(0, 0, 0, 0.75)"
+                borderRadius="md"
+              >
+                <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
+                  IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
+                </Text>
+                <Text  fontSize={isMobile ? 'lg' : 'xl'}>7-9 February, 2025</Text>
+                <Text  fontSize={isMobile ? 'lg' : 'xl'}>ABV-IIITM, GWALIOR</Text>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Image Width={"150px"} backgroundColor={"white"} src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '120px'} />
+                </div>
+                <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
+                  Being Jointly organized by:
+                </Text>
+                <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={2} textAlign="center" mt={2}>
+                  {organizingInstitutions.map((inst, index) => (
+                    <Text key={index} fontSize={isMobile ? 'sm' : 'xl'}>
+                      {inst}
+                    </Text>
+                  ))}
+                </Box>
               </Box>
             </Box>
-          </Box>
-          <Box
-            height="100vh"
-            overflow="hidden"
-            position="relative"
-          >
-            <Image
-              src={mpImage}
-              alt="Madhya Pradesh"
-              w="100%"
-              h="100%"
-              objectFit="cover"
-            />
-            <Box
-              position="absolute"
-              bottom="10%"
-              left="50%"
-              transform="translateX(-50%)"
-              textAlign="center"
-              color="white"
-              p={4}
-              bg="rgba(0, 0, 0, 0.5)"
-              borderRadius="md"
-            >
-              <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
-                IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
-              </Text>
-              <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
-              </div>
-              <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
-                Being Jointly organized by:
-              </Text>
-              <Box textAlign="center" mt={2}>
-                {organizingInstitutions.map((inst, index) => (
-                  <Text key={index} fontSize={isMobile ? 'sm' : 'md'}>{inst}</Text>
-                ))}
-              </Box>
-            </Box>
-          </Box>
-          <Box
-            height="100vh"
-            overflow="hidden"
-            position="relative"
-          >
-            <Image
-              src={indiaImage}
-              alt="India"
-              w="100%"
-              h="100%"
-              objectFit="cover"
-            />
-            <Box
-              position="absolute"
-              bottom="10%"
-              left="50%"
-              transform="translateX(-50%)"
-              textAlign="center"
-              color="white"
-              p={4}
-              bg="rgba(0, 0, 0, 0.5)"
-              borderRadius="md"
-            >
-              <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
-                IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
-              </Text>
-              <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
-              </div>
-              <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
-                Being Jointly organized by:
-              </Text>
-              <Box textAlign="center" mt={2}>
-                {organizingInstitutions.map((inst, index) => (
-                  <Text key={index} fontSize={isMobile ? 'sm' : 'md'}>{inst}</Text>
-                ))}
-              </Box>
-            </Box>
-          </Box>
+          ))}
         </Slider>
       </Box>
-      
+
       {/* Include other components like ConferenceDetails, ObjectiveComponent, ImportantDates, ContactUs */}
       <ConferenceDetails />
       <ObjectiveComponent />

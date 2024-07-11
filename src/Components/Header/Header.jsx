@@ -27,7 +27,7 @@ const Header = () => {
     { to: '/committee', text: 'Committee' },
     { to: '/submission', text: 'Submission' },
     { to: '/venue', text: 'Venue' },
-    { to: '/contact', text: 'Contact' },
+    // { to: '/contact', text: 'Contact' },
   ];
 
   useEffect(() => {
