@@ -11,10 +11,10 @@ const ImportantDates = () => {
   ];
 
   return (
-    <div className="important-dates-section">
+    <div className="important-dates-section" >
       <section className="dates-background">
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ boxShadow: '0px 0px 16px 0px #757575b3', padding: '10px', borderRadius: '20px', background: 'white' }}>
             <div className="col-12">
               <h2 className="section-title">Important Dates</h2>
               <ul className="dates-list">

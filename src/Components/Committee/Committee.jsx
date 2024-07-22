@@ -86,9 +86,9 @@ const CommitteePage = () => {
   return (
     <Box
       bgImage={`url(${img1})`}
-      bgSize="cover"
-      bgRepeat="repeat-x"
-      minHeight="100vh"
+      // bgSize="cover"
+      bgRepeat="repeat-y"
+      // minHeight="50vh"
       py={12}
       color="white"
     >

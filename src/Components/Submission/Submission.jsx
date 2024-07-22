@@ -19,7 +19,7 @@ const Submission = () => {
 
         <div className="venue-row">
           <Box className="about-iiitm">
-            <Text textAlign='center' color='#e72f0e' fontSize={isMobile ? 'xl' : '2xl'} fontWeight="bold">How to Submit paper in IATMSI-2025</Text>
+            <Text textAlign='center' color='#e72f0e' fontSize={isMobile ? 'xl' : '2xl'} fontWeight="bold">How to Submit paper in IEEE MPSec ICET- 2025</Text>
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
               <p>Prospective authors are encouraged to submit full papers in PDF format not exceeding 6 pages in double-column includes all figures, tables, and references. The paper must follow the standard IEEE template (<a rel="noreferrer noopener" href="https://www.ieee.org/conferences_events/conferences/publishing/templates.html" target="_blank">link here</a>).
 
@@ -27,7 +27,7 @@ const Submission = () => {
 
             </Text>
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
-              <p class="has-text-align-justify">Submission of a scientific paper is considered a commitment that, upon acceptance, authors will submit their camera-ready version for inclusion in the formal proceedings and will present the paper at the conference. Each accepted contribution must have at least one paid registration by the time the camera-ready paper is submitted for inclusion in the proceedings. IATMSI reserves the right to remove from IEEE Xplore papers and posters not presented at the symposium.</p>
+              <p class="has-text-align-justify">Submission of a scientific paper is considered a commitment that, upon acceptance, authors will submit their camera-ready version for inclusion in the formal proceedings and will present the paper at the conference. Each accepted contribution must have at least one paid registration by the time the camera-ready paper is submitted for inclusion in the proceedings. IEEE MPSec ICET reserves the right to remove from IEEE Xplore papers and posters not presented at the symposium.</p>
 
             </Text>
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
@@ -36,8 +36,12 @@ const Submission = () => {
               </p>
             </Text>
             <div className="d-flex justify-content-center">
-              <a className="btn btn-primary btn-lg" href="https://iatmsi.iiitm.ac.in/paper-submission/" target='_blank'>
-                Click here to begin the submission process
+              <a
+                className="btn btn-primary btn-lg"
+                // href="https://iatmsi.iiitm.ac.in/paper-submission/" 
+                target='_blank'
+              >
+                Submision will start soon
               </a>
             </div>
 

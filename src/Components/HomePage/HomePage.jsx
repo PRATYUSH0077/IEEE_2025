@@ -70,6 +70,7 @@ const HomePage = () => {
               p={4}
               bg="rgba(0, 0, 0, 0.5)"
               borderRadius="md"
+              padding={'10px'}
             >
               <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
                 IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
@@ -170,7 +171,7 @@ const HomePage = () => {
           </Box>
         </Slider>
       </Box>
-      
+
       {/* Include other components like ConferenceDetails, ObjectiveComponent, ImportantDates, ContactUs */}
       <ConferenceDetails />
       <ObjectiveComponent />

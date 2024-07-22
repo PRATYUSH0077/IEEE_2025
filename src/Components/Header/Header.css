@@ -1,56 +1,62 @@
 /* src/components/Header.css */
 
+/* General Header Styles */
 .header {
-    font-size: 20px; /* Example larger font size */
-    font-weight: bold; /* Make text bold */
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #66C6F1; /* Example hover color */
-  }
-  
-  /* Styles for Drawer */
-  .drawer-content {
-    padding: 20px;
-  }
-  
-  .drawer-content a {
-    display: block;
-    padding: 10px 0;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .drawer-content a:hover {
-    background-color: #F3F3F3; /* Example hover background color */
-  }
-  
+  font-size: 20px;
+  /* Keep the header font size */
+  font-weight: bold;
+  /* Keep text bold */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav Links Styles */
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  /* Increase space between items */
+}
+
+.nav-links li {
+  margin-right: 0;
+  /* Remove specific right margin */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  /* Increase font size for links */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #66C6F1;
+  /* Example hover color */
+}
+
+/* Styles for Drawer */
+.drawer-content {
+  padding: 20px;
+}
+
+.drawer-content a {
+  display: block;
+  padding: 10px 0;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  /* Match drawer font size to nav links */
+  transition: background-color 0.3s ease;
+}
+
+.drawer-content a:hover {
+  background-color: #F3F3F3;
+  /* Example hover background color */
+}

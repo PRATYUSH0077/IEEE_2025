@@ -27,7 +27,7 @@ const Header = () => {
     { to: '/committee', text: 'Committee' },
     { to: '/submission', text: 'Submission' },
     { to: '/venue', text: 'Venue' },
-    { to: '/contact', text: 'Contact' },
+    // { to: '/contact', text: 'Contact' },
   ];
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Header = () => {
                 onClick={onOpen}
               />
             ) : (
-              <nav className="navbar">
+              <nav className="navbar" >
                 <ul className="nav-links">
                   {navLinks.map((link, index) => (
                     <li key={index}>
