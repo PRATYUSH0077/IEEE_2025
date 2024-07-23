@@ -20,8 +20,9 @@ const ImportantDates = () => {
               <ul className="dates-list">
                 {dates.map((item, index) => (
                   <li key={index} className="date-item">
-                    <span className="date">{item.date}</span>
                     <span className="event">{item.event}</span>
+                    <span className="date">{item.date}</span>
+
                   </li>
                 ))}
               </ul>

@@ -36,12 +36,8 @@ const Submission = () => {
               </p>
             </Text>
             <div className="d-flex justify-content-center">
-              <a
-                className="btn btn-primary btn-lg"
-                // href="https://iatmsi.iiitm.ac.in/paper-submission/" 
-                target='_blank'
-              >
-                Submision will start soon
+              <a className="btn btn-primary btn-lg" href="https://iatmsi.iiitm.ac.in/paper-submission/" target='_blank'>
+                Click here to begin the submission process
               </a>
             </div>
 

@@ -9,16 +9,22 @@ const ContactUs = () => {
           <div className="row">
             <div className="col-12">
               <h2 className="section-title">Contact Us</h2>
-              <div className="contact-details">
+              <div style={{fontSize:"20px"}} className="contact-details">
                 <div className="contact-person">
                   <h3 className="person-name">Prof. Aditya Trivedi</h3>
                   <p className="person-role">General Chair</p>
-                  <p className="person-info"><a href="#">Details</a></p>
+                  <p className="person-role">Email: atrivedi@iiitm.ac.in
+
+</p>
+
+                  {/* <p className="person-info"><u><a href=""> Email</a></p></u> */}
                 </div>
-                <div className="contact-person">
+                <div style={{fontSize:"20px"}} className="contact-person">
                   <h3 className="person-name">Dr. Rahul Kala</h3>
                   <p className="person-role">General Chair</p>
-                  <p className="person-info"><a href="#">Details</a></p>
+                  <p className="person-role" >Email: rkala@iiitm.ac.in</p>
+                  
+                  {/* <p className="person-info"><a href="#">Details</a></p> */}
                 </div>
               </div>
             </div>
