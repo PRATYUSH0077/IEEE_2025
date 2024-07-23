@@ -3,36 +3,35 @@
 /* General Header Styles */
 .header {
   font-size: 20px;
-  /* Keep the header font size */
+  /* Example larger font size */
   font-weight: bold;
-  /* Keep text bold */
+  /* Make text bold */
 }
 
-/* Navbar Styles */
 .navbar {
   display: flex;
   align-items: center;
 }
 
-/* Nav Links Styles */
 .nav-links {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 30px;
-  /* Increase space between items */
 }
 
 .nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
   margin-right: 0;
-  /* Remove specific right margin */
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 18px;
-  /* Increase font size for links */
+  color: white;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
@@ -51,8 +50,7 @@
   padding: 10px 0;
   color: black;
   text-decoration: none;
-  font-size: 18px;
-  /* Match drawer font size to nav links */
+  font-size: 16px;
   transition: background-color 0.3s ease;
 }
 

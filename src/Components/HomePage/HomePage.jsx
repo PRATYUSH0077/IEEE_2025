@@ -127,7 +127,8 @@ const HomePage = () => {
                 ))}
               </Box>
             </Box>
-          ))}
+          </Box>
+
         </Slider>
       </Box>
 
