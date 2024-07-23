@@ -45,7 +45,11 @@ const CommitteePage = () => {
     { name: 'Dr. Sunil Kumar', institute: 'ABV-IIITM Gwalior' },
   ];
 
-  const websiteChairs = { name: 'Dr. Rahul Kala', institute: 'ABV-IIITM Gwalior' };
+  const websiteChairs = [
+    { name: 'Dr. Rahul Kala', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Ankit Mewada', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Pratyush Sinha', institute: 'ABV-IIITM Gwalior' }
+  ];
 
   const registrationChair = { name: 'Dr. Anjali', institute: 'ABV-IIITM Gwalior' };
 
@@ -205,11 +209,15 @@ const CommitteePage = () => {
         <motion.div initial="hidden" animate="visible" variants={listVariants}>
           <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md" mb={6}>
             <Heading as="h2" size="lg" mb={3}>
-              Website Chairs
+              Website Chair
             </Heading>
-            <Text fontSize="lg">
-              {websiteChairs.name} ({websiteChairs.institute})
-            </Text>
+            {websiteChairs.map((chair, index) => (
+              <Box key={index} mb={2}>
+                <Text fontSize="lg">
+                  {chair.name} ({chair.institute})
+                </Text>
+              </Box>
+            ))}
           </Box>
         </motion.div>
 

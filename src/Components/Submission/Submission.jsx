@@ -9,9 +9,9 @@ const Submission = () => {
 
   return (
     <>
-      <Box className="venue-top-image">
+      {/* <Box className="venue-top-image">
         <Image src={temp} alt="Venue Top Part" />
-      </Box>
+      </Box> */}
       <Box
         className="venue-page"
         style={{ backgroundImage: `url(${venue_background})` }}
@@ -23,7 +23,7 @@ const Submission = () => {
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
               <p>Prospective authors are encouraged to submit full papers in PDF format not exceeding 6 pages in double-column includes all figures, tables, and references. The paper must follow the standard IEEE template (<a rel="noreferrer noopener" href="https://www.ieee.org/conferences_events/conferences/publishing/templates.html" target="_blank">link here</a>).
 
-                Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions.&nbsp;<strong>All Accepted and Presented papers will be submitted for publication to IEEE Xplore, which is indexed with world’s leading Abstracting &amp; Indexing (A&amp;I) databases</strong> <strong>(SCOPUS etc.)</strong></p>
+                Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions.&nbsp;<strong>All Accepted and Presented papers will be submitted for publication to IEEE Xplore (Acceptance awaited) , which is indexed with world’s leading Abstracting &amp; Indexing (A&amp;I) databases</strong> <strong>(SCOPUS etc.)</strong></p>
 
             </Text>
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
@@ -36,8 +36,12 @@ const Submission = () => {
               </p>
             </Text>
             <div className="d-flex justify-content-center">
-              <a className="btn btn-primary btn-lg" href="https://iatmsi.iiitm.ac.in/paper-submission/" target='_blank'>
-                Click here to begin the submission process
+              <a
+                className="btn btn-primary btn-lg"
+                href="https://iatmsi.iiitm.ac.in/paper-submission/"
+              // target='_blank'
+              >
+                Submission to commence soon
               </a>
             </div>
 

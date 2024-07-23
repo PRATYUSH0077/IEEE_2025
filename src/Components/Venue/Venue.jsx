@@ -9,9 +9,9 @@ const Venue = () => {
 
     return (
         <>
-            <Box className="venue-top-image">
+            {/* <Box className="venue-top-image">
                 <Image src={temp} alt="Venue Top Part" />
-            </Box>
+            </Box> */}
             <Box
                 className="venue-page"
                 style={{ backgroundImage: `url(${venue_background})` }}
