@@ -163,7 +163,7 @@ function Tracks() {
                                 {isTrackOpen(8) && (
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
-                                        <li>o Dr. Gaurav Kumar Bharti, IISER Bhopal</li>
+                                        <li>o Dr. Gaurav Kumar Bharti, IIIT Bhopal</li>
                                     </ul>
                                 )}
                             </li>

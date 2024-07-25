@@ -27,7 +27,7 @@ const CommitteePage = () => {
   ];
 
   const generalCoChairs = [
-    { name: 'Dr. Gaurav Kumar Bharti', institute: 'IISER Bhopal' },
+    { name: 'Dr. Gaurav Kumar Bharti', institute: 'IIIT Bhopal' },
     { name: 'Dr. Durgesh Singh', institute: 'IIITDM Jabalpur' },
   ];
 

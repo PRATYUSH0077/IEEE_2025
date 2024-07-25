@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import gwaliorImage from '../../assets/clg.jpg'; // Adjust these paths to your actual images
 import mpImage from '../../assets/fort.jpg';
 import indiaImage from '../../assets/fort2.jpg';
-import mpLogo from '../../assets/MP-logo.png'; // Adjust the path to your MP logo image
+import IEEELOGO  from '../../assets/IEEELOGO.png'; // Adjust the path to your MP logo image
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
 import ImportantDates from './ImportantDates';
@@ -68,7 +68,7 @@ const HomePage = () => {
               textAlign="center"
               color="white"
               p={4}
-              bg="rgba(0, 0, 0, 0.5)"
+              bg="rgba(0, 0, 0, 0.8)"
               borderRadius="md"
             >
               <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
@@ -76,7 +76,7 @@ const HomePage = () => {
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
+                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
               </div>
               <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
                 Being Jointly organized by:
@@ -108,7 +108,7 @@ const HomePage = () => {
               textAlign="center"
               color="white"
               p={4}
-              bg="rgba(0, 0, 0, 0.5)"
+              bg="rgba(0, 0, 0, 0.8)"
               borderRadius="md"
             >
               <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
@@ -116,7 +116,7 @@ const HomePage = () => {
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={mpLogo} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
+                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
               </div>
               <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
                 Being Jointly organized by:
