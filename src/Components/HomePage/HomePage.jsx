@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import gwaliorImage from '../../assets/clg.jpg'; // Adjust these paths to your actual images
 import mpImage from '../../assets/fort.jpg';
-// import indiaImage from '../../assets/fort2.jpg';
+import indiaImage from '../../assets/fort2.jpg';
 import IEEELOGO  from '../../assets/IEEELOGO.png'; // Adjust the path to your MP logo image
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
@@ -76,12 +76,12 @@ const HomePage = () => {
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
+                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
               </div>
               <Text fontSize={isMobile ? 'sm' : 'xl'} mt={2} fontWeight="bold">
                 Being Jointly organized by:
               </Text>
-              <Box textAlign="center" mt={2}>
+              <Box textAlign="center" mt={2} >
                 {organizingInstitutions.map((inst, index) => (
                   <Text key={index} fontSize={isMobile ? 'sm' : 'lg'}>{inst}</Text>
                 ))}
@@ -116,7 +116,7 @@ const HomePage = () => {
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '80px'} />
+                <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
               </div>
               <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
                 Being Jointly organized by:
