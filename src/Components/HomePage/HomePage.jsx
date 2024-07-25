@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import gwaliorImage from '../../assets/clg.jpg'; // Adjust these paths to your actual images
 import mpImage from '../../assets/fort.jpg';
 import indiaImage from '../../assets/fort2.jpg';
-import IEEELOGO  from '../../assets/IEEELOGO.png'; // Adjust the path to your MP logo image
+import IEEELOGO from '../../assets/ieee_logo.jpeg'; // Adjust the path to your MP logo image
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
 import ImportantDates from './ImportantDates';
