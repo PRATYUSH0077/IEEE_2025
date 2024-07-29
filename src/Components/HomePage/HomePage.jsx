@@ -114,7 +114,7 @@ const HomePage = () => {
               <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
                 IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
               </Text>
-              <Text fontSize={isMobile ? 'sm' : 'lg'}>7-9 February, 2025</Text>
+              <Text fontSize={isMobile ? 'sm' : 'lg'}>21-23 February, 2025</Text>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
               </div>
