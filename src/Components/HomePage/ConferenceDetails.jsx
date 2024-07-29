@@ -31,7 +31,7 @@ const ConferenceDetails = () => (
                 <p><i className="Icon Icon-clock Icon--32px text-primary" aria-hidden="true"></i></p>
                 <p style={{ fontSize: '20px' }} className="headColor">When</p>
                 <p> Friday to Sunday</p>
-                <p>7-9 February, 2025 </p>
+                <p>21-23 February, 2025 </p>
               </div>
             </div>
             {/* <div className=""> <a style={{ cursor: 'pointer' }} className="btn btn-primary text-uppercase u-MarginBottom10 u-LetterSpacing2" onClick={loadabouUs}> LEARN MORE ABOUT ORGANIZERS</a> </div> */}

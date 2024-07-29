@@ -3,11 +3,11 @@ import './ImportantDates.css'; // Import the CSS file for styling
 
 const ImportantDates = () => {
   const dates = [
-    { date: '10th July, 2024', event: 'Paper submission opens' },
-    { date: '29th September, 2024', event: 'Rolling submission closes' },
-    { date: '13th December, 2024', event: 'Acceptance of selected papers' },
-    { date: '17th January, 2025', event: 'Final Paper Submission and Registration Deadline' },
-    { date: '7-9 February, 2025', event: 'Conference Dates' },
+    { date: '5th August, 2024', event: 'Paper submission opens' },
+    { date: '18th October, 2024', event: 'Rolling submission closes' },
+    { date: '29th December, 2024', event: 'Acceptance of selected papers' },
+    { date: '31th January, 2025', event: 'Final Paper Submission and Registration Deadline' },
+    { date: '21-23 February, 2025', event: 'Conference Dates' },
   ];
 
   return (
