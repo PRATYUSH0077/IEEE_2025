@@ -1,5 +1,3 @@
-// src/components/Header.js
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -46,7 +44,7 @@ const Header = () => {
     <header className="header"> {/* Apply header class here */}
       <Box bg="gray.800" color="white" px={4}>
         <Flex h={16} alignItems="center" justifyContent="space-between">
-          <Box>IEEE MPSec ICET 2025</Box>
+          <Box>IEEE MPSec ICETA 2025</Box>
           <Flex alignItems="center">
             {isMobile ? (
               <IconButton

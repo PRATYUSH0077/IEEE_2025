@@ -19,7 +19,7 @@ const Submission = () => {
 
         <div className="venue-row">
           <Box className="about-iiitm">
-            <Text textAlign='center' color='#e72f0e' fontSize={isMobile ? 'xl' : '2xl'} fontWeight="bold">How to Submit paper in IEEE MPSec ICET 2025</Text>
+            <Text textAlign='center' color='#e72f0e' fontSize={isMobile ? 'xl' : '2xl'} fontWeight="bold">How to Submit paper in IEEE MPSec ICETA 2025</Text>
             <Text fontSize={isMobile ? 'lg' : 'xl'}>
               <p>Prospective authors are encouraged to submit full papers in PDF format not exceeding 6 pages in double-column includes all figures, tables, and references. The paper must follow the standard IEEE template (<a rel="noreferrer noopener" href="https://www.ieee.org/conferences_events/conferences/publishing/templates.html" target="_blank">link here</a>).
 

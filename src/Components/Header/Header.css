@@ -6,6 +6,13 @@
   /* Example larger font size */
   font-weight: bold;
   /* Make text bold */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: gray.800;
+  /* Ensure the background covers the content below */
+  width: 100%;
 }
 
 .navbar {
