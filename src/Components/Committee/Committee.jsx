@@ -15,13 +15,12 @@ import { motion } from 'framer-motion';
 const CommitteePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
-  const patron = {
-    name: 'Prof. S. N. Singh',
-    role: 'Director',
-    institute: 'ABV-IIITM Gwalior',
-  };
+  const patrons = [
+    { name: 'Prof. S. N. Singh', role: 'Director', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Prof. G. S. Tomar', role: 'Chairperson', institute: 'IEEE Madhya Pradesh Section' },
+  ];
 
-  const generalChair = [
+  const generalChairs = [
     { name: 'Prof. Aditya Trivedi', institute: 'ABV-IIITM Gwalior' },
     { name: 'Dr. Rahul Kala', institute: 'ABV-IIITM Gwalior' },
   ];
@@ -29,31 +28,44 @@ const CommitteePage = () => {
   const generalCoChairs = [
     { name: 'Dr. Gaurav Kumar Bharti', institute: 'IIIT Bhopal' },
     { name: 'Dr. Durgesh Singh', institute: 'IIITDM Jabalpur' },
+    { name: 'Dr. Amit Ojha', institute: 'MANIT Bhopal' },
   ];
 
-  const publicationChair = { name: 'Dr. Mahendra Shukla', institute: 'ABV-IIITM Gwalior' };
+  const publicationChairs = [
+    { name: 'Dr. Mahendra Shukla', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Robin Singh Bhadoria', institute: 'NIT Hamirpur' },
+  ];
 
-  const publicityChair = { name: 'Dr. Veena Anand', institute: 'ABV-IIITM Gwalior' };
+  const publicityChairs = [
+    { name: 'Dr. Veena Anand', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Vijaypal Singh Rathor', institute: 'ABV-IIITM Gwalior' },
+  ];
 
-  const financeChair = [
+  const financeChairs = [
     { name: 'Prof. K.K. Pattanaik', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. M. P. S. Chawla', institute: 'SGSITS Indore' },
     { name: 'Mr. Anil Garg', institute: 'ABV-IIITM Gwalior' },
   ];
 
-  const industryChair = [
+  const industryChairs = [
     { name: 'Prof. Mahua Bhattacharya', institute: 'ABV-IIITM Gwalior' },
     { name: 'Dr. Sunil Kumar', institute: 'ABV-IIITM Gwalior' },
   ];
 
   const websiteChairs = [
-    { name: 'Dr. Rahul Kala', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Anjali', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Roshni Chakraborty', institute: 'ABV-IIITM Gwalior' },
     { name: 'Ankit Mewada', institute: 'ABV-IIITM Gwalior' },
-    { name: 'Pratyush Sinha', institute: 'ABV-IIITM Gwalior' }
+    { name: 'Pratyush Sinha', institute: 'ABV-IIITM Gwalior' },
   ];
 
-  const registrationChair = { name: 'Dr. Anjali', institute: 'ABV-IIITM Gwalior' };
+  const oversightCommittee = [
+    { name: 'Dr. Vivek Tiwari', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Deepak Singh Tomar', institute: 'MANIT Bhopal' },
+  ];
 
   const advisoryCommittee = [
+    { name: 'Prof. Sanjay Agarwal', institute: 'NITTTR Bhopal' },
     { name: 'Prof. Dr. Angela Amphawan', institute: 'Sunway University, Malaysia' },
     { name: 'Prof. Monia Najjar Bounouh', institute: 'University of Tunis El Manar, Tunisia' },
     { name: 'Dr. Mayur Kumar Chhipa', institute: 'ISBAT University, Uganda' },
@@ -61,8 +73,13 @@ const CommitteePage = () => {
     { name: 'Prof. Peter Breda', institute: 'University of Zilina, Slovakia' },
     { name: 'Prof. Amit Kr. Mishra', institute: 'University of Aberswyth, UK' },
     { name: 'Prof. Sanjay Kumar Singh', institute: 'IIT BHU Varanasi' },
+    { name: 'Prof. Abhay Kumar', institute: 'IIIT Agartala' },
+    { name: 'Prof. Ghanshyam Singh', institute: 'MNIT Jaipur' },
+    { name: 'Prof. Ramesh Kumar Sonkar', institute: 'IIT Guwahati' },  // Newly added
+    { name: 'Prof. Saurabh Kumar Pandey', institute: 'IIT Patna' },  // Newly added
+    { name: 'Prof. Santosh Kumar', institute: 'KL University' },  // Newly added
   ];
-
+  
   const technicalCommittee = [
     { name: 'Dr. Mayank Swarnkar', institute: 'IIT BHU Varanasi' },
     { name: 'Dr. Chandresh Kumar Maurya', institute: 'IIT Indore' },
@@ -71,8 +88,25 @@ const CommitteePage = () => {
     { name: 'Dr. Dharamveer Singh Rajpoot', institute: 'Jaypee Noida' },
     { name: 'Dr. Ayan Seal', institute: 'IIITDM Jabalpur' },
     { name: 'Dr. Avinash Chandra Pandey', institute: 'IIITDM Jabalpur' },
-    { name: 'Dr. Vijaypal Singh Rathor', institute: 'IIITDM Jabalpur' },
+    { name: 'Dr. Vijaypal Singh Rathor', institute: 'IIITDM Jabalpur' },  // Newly added, different role
+    { name: 'Dr. Nabajyoti Mazumdar', institute: 'IIIT Allahabad' },  // Newly added
+    { name: 'Dr. Neetesh Kumar', institute: 'IIT Roorkee' },  // Newly added
+    { name: 'Dr. Vijay Bhaskar Semwal', institute: 'MANIT Bhopal' },  // Newly added
+    { name: 'Dr. Ashish Kumar Maurya', institute: 'MNNIT Allahabad' },  // Newly added
+    { name: 'Dr. Vibhav Prakash Singh', institute: 'MNNIT Allahabad' },  // Newly added
+    { name: 'Dr. Sandeep Sambhaji Udmale', institute: 'VJTI Mumbai' },  // Newly added
+    { name: 'Dr. Neeraj Jain', institute: 'Jaypee Noida' },  // Newly added
+    { name: 'Dr. Mridula Verma', institute: 'IDRBT' },  // Newly added
+    { name: 'Prof. Xuan Tu-Tran', institute: 'Vietnam National University, Hanoi, Vietnam' },  // Newly added
+    { name: 'Prof. Faraz Hussian', institute: 'TDTU, HCM City, Vietnam' },  // Newly added
+    { name: 'Prof. Jayanta Kumar Rakshit', institute: 'NIT Agartala' },  // Newly added
+    { name: 'Prof. Subhash Kumar Arya', institute: 'NEHU, Meghalaya' },  // Newly added
+    { name: 'Prof. Lalita Gupta', institute: 'MANIT Bhopal' },  // Newly added
+    { name: 'Dr. Deepika Gupta', institute: 'IIIT Naya Raipur' },  // Newly added
+    { name: 'Prof. Susanta Kumar Tripathy', institute: 'NIT Silchar' },  // Newly added
+    { name: 'Prof. Jawar Singh', institute: 'IIT Patna' },  // Newly added
   ];
+  
 
   const listVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -90,9 +124,7 @@ const CommitteePage = () => {
   return (
     <Box
       bgImage={`url(${img1})`}
-      // bgSize="cover"
       bgRepeat="repeat-y"
-      // minHeight="50vh"
       py={12}
       color="white"
     >
@@ -110,10 +142,11 @@ const CommitteePage = () => {
             <Heading as="h2" size="lg" mb={3}>
               Patron
             </Heading>
-            <Text fontSize="lg" mb={2}>
-              {patron.name} ({patron.institute})
-            </Text>
-            <Text fontSize="md">{patron.role}</Text>
+            {patrons.map((patron, index) => (
+              <Text fontSize="lg" mb={2} key={index}>
+                {patron.name} ({patron.role}, {patron.institute})
+              </Text>
+            ))}
           </Box>
         </motion.div>
 
@@ -123,12 +156,10 @@ const CommitteePage = () => {
             <Heading as="h2" size="lg" mb={3}>
               General Chair
             </Heading>
-            {generalChair.map((chair, index) => (
-              <Box key={index} mb={2}>
-                <Text fontSize="lg">
-                  {chair.name} ({chair.institute})
-                </Text>
-              </Box>
+            {generalChairs.map((chair, index) => (
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
             ))}
           </Box>
         </motion.div>
@@ -140,11 +171,9 @@ const CommitteePage = () => {
               General Co-Chairs
             </Heading>
             {generalCoChairs.map((chair, index) => (
-              <Box key={index} mb={2}>
-                <Text fontSize="lg">
-                  {chair.name} ({chair.institute})
-                </Text>
-              </Box>
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
             ))}
           </Box>
         </motion.div>
@@ -155,9 +184,11 @@ const CommitteePage = () => {
             <Heading as="h2" size="lg" mb={3}>
               Publication Chair
             </Heading>
-            <Text fontSize="lg">
-              {publicationChair.name} ({publicationChair.institute})
-            </Text>
+            {publicationChairs.map((chair, index) => (
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
+            ))}
           </Box>
         </motion.div>
 
@@ -167,9 +198,11 @@ const CommitteePage = () => {
             <Heading as="h2" size="lg" mb={3}>
               Publicity Chair
             </Heading>
-            <Text fontSize="lg">
-              {publicityChair.name} ({publicityChair.institute})
-            </Text>
+            {publicityChairs.map((chair, index) => (
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
+            ))}
           </Box>
         </motion.div>
 
@@ -179,57 +212,53 @@ const CommitteePage = () => {
             <Heading as="h2" size="lg" mb={3}>
               Finance Chair
             </Heading>
-            {financeChair.map((chair, index) => (
-              <Box key={index} mb={2}>
-                <Text fontSize="lg">
-                  {chair.name} ({chair.institute})
-                </Text>
-              </Box>
+            {financeChairs.map((chair, index) => (
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
             ))}
           </Box>
         </motion.div>
 
-        {/* Industry Relationship and Sponsorship Chair */}
+        {/* Industry Chair */}
         <motion.div initial="hidden" animate="visible" variants={listVariants}>
           <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md" mb={6}>
             <Heading as="h2" size="lg" mb={3}>
               Industry Relationship and Sponsorship Chair
             </Heading>
-            {industryChair.map((chair, index) => (
-              <Box key={index} mb={2}>
-                <Text fontSize="lg">
-                  {chair.name} ({chair.institute})
-                </Text>
-              </Box>
+            {industryChairs.map((chair, index) => (
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
             ))}
           </Box>
         </motion.div>
 
-        {/* Website Chairs */}
+        {/* Website Chair */}
         <motion.div initial="hidden" animate="visible" variants={listVariants}>
           <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md" mb={6}>
             <Heading as="h2" size="lg" mb={3}>
               Website Chair
             </Heading>
             {websiteChairs.map((chair, index) => (
-              <Box key={index} mb={2}>
-                <Text fontSize="lg">
-                  {chair.name} ({chair.institute})
-                </Text>
-              </Box>
+              <Text fontSize="lg" key={index}>
+                {chair.name} ({chair.institute})
+              </Text>
             ))}
           </Box>
         </motion.div>
 
-        {/* Registration Chair */}
+        {/* Oversight Committee */}
         <motion.div initial="hidden" animate="visible" variants={listVariants}>
           <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md" mb={6}>
             <Heading as="h2" size="lg" mb={3}>
-              Registration Chair
+              Oversight Committee
             </Heading>
-            <Text fontSize="lg">
-              {registrationChair.name} ({registrationChair.institute})
-            </Text>
+            {oversightCommittee.map((member, index) => (
+              <Text fontSize="lg" key={index}>
+                {member.name} ({member.institute})
+              </Text>
+            ))}
           </Box>
         </motion.div>
 
@@ -241,33 +270,29 @@ const CommitteePage = () => {
             </Heading>
             <List spacing={3}>
               {advisoryCommittee.map((member, index) => (
-                <motion.div key={index} variants={listVariants}>
-                  <ListItem>
-                    <Text fontSize="lg">
-                      {member.name} ({member.institute})
-                    </Text>
-                  </ListItem>
-                </motion.div>
+                <ListItem key={index}>
+                  <Text fontSize="lg">
+                    {member.name} ({member.institute})
+                  </Text>
+                </ListItem>
               ))}
             </List>
           </Box>
         </motion.div>
 
-        {/* Technical Program Committee */}
+        {/* Technical Committee */}
         <motion.div initial="hidden" animate="visible" variants={listVariants}>
           <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md" mb={6}>
             <Heading as="h2" size="lg" mb={3}>
-              Technical Program Committee
+              Technical Committee
             </Heading>
             <List spacing={3}>
               {technicalCommittee.map((member, index) => (
-                <motion.div key={index} variants={listVariants}>
-                  <ListItem>
-                    <Text fontSize="lg">
-                      {member.name} ({member.institute})
-                    </Text>
-                  </ListItem>
-                </motion.div>
+                <ListItem key={index}>
+                  <Text fontSize="lg">
+                    {member.name} ({member.institute})
+                  </Text>
+                </ListItem>
               ))}
             </List>
           </Box>
