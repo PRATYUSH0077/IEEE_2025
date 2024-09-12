@@ -52,7 +52,8 @@ function Tracks() {
                                 {isTrackOpen(1) && (
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
-                                        <li>o Prof Sumit Gautam, EE, IIT Indore</li>
+                                        <li>o Prof Sumit Gautam, IIT Indore</li>
+                                        <li>o Prof. Vimal Bhatia, IIT Indore</li>
                                         <li>o Dr. Vinod Kumar Jain, IIITDM Jabalpur</li>
                                     </ul>
                                 )}
@@ -69,7 +70,8 @@ function Tracks() {
                                 {isTrackOpen(2) && (
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
-                                        <li>o Dr. Varun Bajaj, Associate Professor, ECED MANIT Bhopal</li>
+                                        <li>o Prof. R. N. Yadav, MANIT Bhopal</li>
+                                        <li>o Dr. Varun Bajaj, Associate Professor, MANIT Bhopal</li>
                                         <li>o Dr. Ayan Seal, Assistant Professor, IIITDM Jabalpur</li>
                                     </ul>
                                 )}
@@ -86,6 +88,7 @@ function Tracks() {
                                 {isTrackOpen(3) && (
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
+                                        <li>o Prof. Kapil Ahuja, IIT Indore</li>
                                         <li>o Dr. Avinash Chand Pandey, Assistant Professor, IIITDM Jabalpur</li>
                                     </ul>
                                 )}
@@ -101,7 +104,9 @@ function Tracks() {
                                 </button>
                                 {isTrackOpen(4) && (
                                     <ul className="list-unstyled">
-                                        <li>No specific chairs listed</li>
+                                        <li>Chairs:</li>
+                                        <li>o Dr. Wilfred W. Godfrey, ABV-IIITM Gwalior</li>
+                                        {/* <li>No specific chairs listed</li> */}
                                     </ul>
                                 )}
                             </li>
@@ -116,7 +121,10 @@ function Tracks() {
                                 </button>
                                 {isTrackOpen(5) && (
                                     <ul className="list-unstyled">
-                                        <li>No specific chairs listed</li>
+                                        <li>Chairs:</li>
+                                        <li>o Dr. M. A. Rizvi, NITTTR Bhopal </li>
+                                        <li>o Dr. Debanjan Sadhya, ABV-IIITM Gwalior</li>
+                                        {/* <li>No specific chairs listed</li> */}
                                     </ul>
                                 )}
                             </li>
@@ -133,6 +141,8 @@ function Tracks() {
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
                                         <li>o Dr. Munesh Singh, Assistant Professor, IIITDM Jabalpur</li>
+                                        <li>o  Dr. Ravi Kant Kapoor, NITTTR Bhopal</li>
+                                        {/* <li>o  Dr. Ravi Kant Kapoor, NITTTR Bhopal</li> */}
                                     </ul>
                                 )}
                             </li>
@@ -147,7 +157,10 @@ function Tracks() {
                                 </button>
                                 {isTrackOpen(7) && (
                                     <ul className="list-unstyled">
-                                        <li>No specific chairs listed</li>
+                                        <li>Chairs:</li>
+                                        <li>o  Dr. Mitradip Bhattacharjee, IISER Bhopal</li>
+                                        <li>o  Dr. Gaurav Sharma, ABV-IIITM Gwalior</li>
+                                        {/* <li>No specific chairs listed</li> */}
                                     </ul>
                                 )}
                             </li>
@@ -164,6 +177,7 @@ function Tracks() {
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
                                         <li>o Dr. Gaurav Kumar Bharti, IIIT Bhopal</li>
+                                        <li>o Dr. Santanu Talukder, IISER Bhopal</li>
                                     </ul>
                                 )}
                             </li>

@@ -35,6 +35,7 @@ const HomePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   const organizingInstitutions = [
+    'IEEE Madhya Pradesh Section',
     'ABV-IIITM Gwalior',
     'IIT Indore',
     'PDPM-IIITDM Jabalpur',
@@ -83,7 +84,7 @@ const HomePage = () => {
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
               </Box>
               <Text fontSize={isMobile ? 'sm' : 'xl'} mt={2} fontWeight="bold">
-                Organized by IIITM
+                Jointly organized by
               </Text>
               <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
@@ -129,7 +130,7 @@ const HomePage = () => {
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
               </Box>
               <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
-                Organized by IIITM
+                Jointly organized by
               </Text>
               <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
