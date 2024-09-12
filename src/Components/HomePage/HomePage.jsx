@@ -35,6 +35,7 @@ const HomePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   const organizingInstitutions = [
+    'IEEE Madhya Pradesh Section',
     'ABV-IIITM Gwalior',
     'IIT Indore',
     'PDPM-IIITDM Jabalpur',
@@ -61,33 +62,38 @@ const HomePage = () => {
               objectFit="cover"
             />
             <Box
-              position="absolute"
-              bottom="10%"
+              position="relative"
+              bottom="100%"
               left="50%"
               transform="translateX(-50%)"
               textAlign="center"
               color="white"
-              p={4}
+              p={3}
               bg="rgba(0, 0, 0, 0.8)"
               borderRadius="md"
+              maxW="80%"
             >
-              <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
-                IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
+              <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold" mb={2}>
+                IEEE International Conference on Emerging Technologies and Applications 2025
+              </Text>
+              <Text fontSize={isMobile ? 'md' : 'lg'} mb={2}>
+                A flagship conference of the IEEE Madhya Pradesh Section
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>21-23 February, 2025</Text>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Box display="flex" alignItems="center" justifyContent="center" mt={2}>
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
-              </div>
+              </Box>
               <Text fontSize={isMobile ? 'sm' : 'xl'} mt={2} fontWeight="bold">
-                Being Jointly organized by:
+                Jointly organized by
               </Text>
-              <Box textAlign="center" mt={2} >
+              <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
                   <Text key={index} fontSize={isMobile ? 'sm' : 'lg'}>{inst}</Text>
                 ))}
               </Box>
             </Box>
           </Box>
+
           <Box
             height="100vh"
             overflow="hidden"
@@ -101,25 +107,30 @@ const HomePage = () => {
               objectFit="cover"
             />
             <Box
-              position="absolute"
-              bottom="10%"
+              position="relative"
+              bottom="100%"
               left="50%"
               transform="translateX(-50%)"
               textAlign="center"
               color="white"
-              p={4}
+              p={3}
               bg="rgba(0, 0, 0, 0.8)"
               borderRadius="md"
+              // maxW="90%"
+              width="85%"
             >
               <Text fontSize={isMobile ? 'md' : 'xl'} fontWeight="bold">
-                IEEE Madhya Pradesh Section International Conference on Emerging Technologies 2025
+                IEEE International Conference on Emerging Technologies and Applications 2025
+              </Text>
+              <Text fontSize={isMobile ? 'md' : 'lg'} mb={2}>
+                A flagship conference of the IEEE Madhya Pradesh Section
               </Text>
               <Text fontSize={isMobile ? 'sm' : 'lg'}>21-23 February, 2025</Text>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Box display="flex" alignItems="center" justifyContent="center" mt={2}>
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '100px'} />
-              </div>
+              </Box>
               <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
-                Being Jointly organized by:
+                Jointly organized by
               </Text>
               <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
@@ -128,7 +139,6 @@ const HomePage = () => {
               </Box>
             </Box>
           </Box>
-
         </Slider>
       </Box>
 
