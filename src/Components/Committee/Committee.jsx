@@ -38,7 +38,7 @@ const CommitteePage = () => {
 
   const publicityChairs = [
     { name: 'Dr. Veena Anand', institute: 'ABV-IIITM Gwalior' },
-    { name: 'Dr. Vijaypal Singh Rathor', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Roshni Chakarborty', institute: 'ABV-IIITM Gwalior' },
   ];
 
   const financeChairs = [
@@ -54,7 +54,7 @@ const CommitteePage = () => {
 
   const websiteChairs = [
     { name: 'Dr. Anjali', institute: 'ABV-IIITM Gwalior' },
-    { name: 'Dr. Roshni Chakraborty', institute: 'ABV-IIITM Gwalior' },
+    { name: 'Dr. Vijaypal Singh Rathore', institute: 'ABV-IIITM Gwalior' },
     { name: 'Ankit Mewada', institute: 'ABV-IIITM Gwalior' },
     { name: 'Pratyush Sinha', institute: 'ABV-IIITM Gwalior' },
   ];
@@ -66,6 +66,7 @@ const CommitteePage = () => {
 
   const advisoryCommittee = [
     { name: 'Prof. Sanjay Agarwal', institute: 'NITTTR Bhopal' },
+    { name: 'Jawar Singh', institute: 'IIT Patna' },
     { name: 'Prof. Dr. Angela Amphawan', institute: 'Sunway University, Malaysia' },
     { name: 'Prof. Monia Najjar Bounouh', institute: 'University of Tunis El Manar, Tunisia' },
     { name: 'Dr. Mayur Kumar Chhipa', institute: 'ISBAT University, Uganda' },
@@ -79,7 +80,7 @@ const CommitteePage = () => {
     { name: 'Prof. Saurabh Kumar Pandey', institute: 'IIT Patna' },  // Newly added
     { name: 'Prof. Santosh Kumar', institute: 'KL University' },  // Newly added
   ];
-  
+
   const technicalCommittee = [
     { name: 'Dr. Mayank Swarnkar', institute: 'IIT BHU Varanasi' },
     { name: 'Dr. Chandresh Kumar Maurya', institute: 'IIT Indore' },
@@ -100,13 +101,13 @@ const CommitteePage = () => {
     { name: 'Prof. Xuan Tu-Tran', institute: 'Vietnam National University, Hanoi, Vietnam' },  // Newly added
     { name: 'Prof. Faraz Hussian', institute: 'TDTU, HCM City, Vietnam' },  // Newly added
     { name: 'Prof. Jayanta Kumar Rakshit', institute: 'NIT Agartala' },  // Newly added
-    { name: 'Prof. Subhash Kumar Arya', institute: 'NEHU, Meghalaya' },  // Newly added
+    { name: 'Prof. Subhash Kumar C.Arya', institute: 'NEHU, Meghalaya' },  // Newly added
     { name: 'Prof. Lalita Gupta', institute: 'MANIT Bhopal' },  // Newly added
     { name: 'Dr. Deepika Gupta', institute: 'IIIT Naya Raipur' },  // Newly added
     { name: 'Prof. Susanta Kumar Tripathy', institute: 'NIT Silchar' },  // Newly added
     { name: 'Prof. Jawar Singh', institute: 'IIT Patna' },  // Newly added
   ];
-  
+
 
   const listVariants = {
     hidden: { opacity: 0, y: 50 },
