@@ -82,9 +82,6 @@ const HomePage = () => {
               <Box display="flex" alignItems="center" justifyContent="center" mt={2}>
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '110px'} />
               </Box>
-              <Text fontSize={isMobile ? 'sm' : 'xl'} mt={2} fontWeight="bold">
-                Jointly organized by
-              </Text>
               <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
                   <Text key={index} fontSize={isMobile ? 'sm' : 'lg'}>{inst}</Text>

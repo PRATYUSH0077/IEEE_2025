@@ -106,6 +106,7 @@ function Tracks() {
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
                                         <li>o Dr. Wilfred W. Godfrey, ABV-IIITM Gwalior</li>
+                                        <li>o Dr. Rahul Chaurasia, IIIT Bhopal</li>
                                         {/* <li>No specific chairs listed</li> */}
                                     </ul>
                                 )}
@@ -123,6 +124,7 @@ function Tracks() {
                                     <ul className="list-unstyled">
                                         <li>Chairs:</li>
                                         <li>o Dr. M. A. Rizvi, NITTTR Bhopal </li>
+                                        <li>o Prof. Deepak Singh Tomar, MANIT</li>
                                         <li>o Dr. Debanjan Sadhya, ABV-IIITM Gwalior</li>
                                         {/* <li>No specific chairs listed</li> */}
                                     </ul>
