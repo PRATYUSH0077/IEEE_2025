@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import gwaliorImage from '../../assets/clg.jpg'; // Adjust these paths to your actual images
 import mpImage from '../../assets/fort.jpg';
 import indiaImage from '../../assets/fort2.jpg';
-import IEEELOGO from '../../assets/ieee_mp_section.jpeg'; // Adjust the path to your MP logo image
+import IEEELOGO from '../../assets/ieee_mp_logo.jpeg'; // Adjust the path to your MP logo image
 import ConferenceDetails from './ConferenceDetails';
 import ObjectiveComponent from './ObjectiveComponent';
 import ImportantDates from './ImportantDates';
@@ -82,6 +82,9 @@ const HomePage = () => {
               <Box display="flex" alignItems="center" justifyContent="center" mt={2}>
                 <Image src={IEEELOGO} alt="MP Logo" boxSize={isMobile ? '40px' : '110px'} />
               </Box>
+              <Text fontSize={isMobile ? 'sm' : 'lg'} mt={2} fontWeight="bold">
+                Jointly organized by
+              </Text>
               <Box textAlign="center" mt={2}>
                 {organizingInstitutions.map((inst, index) => (
                   <Text key={index} fontSize={isMobile ? 'sm' : 'lg'}>{inst}</Text>
