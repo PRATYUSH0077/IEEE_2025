@@ -20,7 +20,6 @@
   padding-bottom: 10px;
   margin-bottom: 30px;
   color: #000;
-  /* Make the title text dark */
 }
 
 .dates-list {
@@ -33,21 +32,25 @@
 .date-item {
   font-size: 18px;
   margin-bottom: 10px;
-  /* Reduce the margin between items */
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 10px;
   color: #000;
-  /* Make the text dark */
 }
 
 .date {
   font-weight: bold;
   margin-right: 10px;
-  /* Reduce space between date and event */
 }
 
 .event {
   font-style: italic;
+}
+
+/* Red strikethrough for the extended date */
+.red-strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  color: #757575;
 }
