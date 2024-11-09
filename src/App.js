@@ -9,7 +9,7 @@ import Venue from './Components/Venue/Venue';
 import Submission from './Components/Submission/Submission';
 import Tracks from './Components/Tracks/Tracks';
 import CommitteePage from './Components/Committee/Committee';
-
+import Registration from './Components/Registration/Registration';
 const App = () => {
   return (
     <Router>
@@ -21,6 +21,8 @@ const App = () => {
           <Route path="/submission" element={<Submission />} />
           <Route path="/tracks" element={<Tracks />} />
           <Route path="/committee" element={<CommitteePage />} />
+          <Route path="/registration" element={<Registration/>} />
+
 
           {/* Add other routes here */}
         </Routes>

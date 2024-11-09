@@ -24,6 +24,7 @@ const Header = () => {
     { to: '/tracks', text: 'Tracks' },
     { to: '/committee', text: 'Committee' },
     { to: '/submission', text: 'Submission' },
+    { to: '/registration', text: 'Registration' },
     { to: '/venue', text: 'Venue' },
     // { to: '/contact', text: 'Contact' },
   ];
