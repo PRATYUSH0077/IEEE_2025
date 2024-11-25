@@ -7,6 +7,7 @@ const ImportantDates = () => {
     {
       date: '31st October, 2024',
       newDate: '25th November, 2024',
+      finalDate: '2nd December, 2024',
       event: 'Rolling submission closes'
     },
     { date: '31st January, 2024', event: 'Acceptance of selected papers' },
@@ -26,7 +27,12 @@ const ImportantDates = () => {
                   <li key={index} className="date-item">
                     <span className="event">{item.event}</span>
                     <span className="date">
-                      {item.newDate ? (
+                      {item.finalDate ? (
+                        <>
+                          <span className="red-strikethrough">{item.date}</span> ➔{' '}
+                          <span className="red-strikethrough">{item.newDate}</span> ➔ <span>{item.finalDate}</span>
+                        </>
+                      ) : item.newDate ? (
                         <>
                           <span className="red-strikethrough">{item.date}</span> ➔ <span>{item.newDate}</span>
                         </>
