@@ -1,92 +1,74 @@
 import React from 'react';
-import registrationDoc from '../../assets/registration.docx';
+import venue_background from '../../assets/venue_background.jpg';
+import { Box, Table, Thead, Tbody, Tr, Th, Td, Text } from '@chakra-ui/react';
+
+import './RegistrationPage.css'; // Importing the CSS file
+
+// Registration data list
+const registrationData = [
+  { type: "IEEE Student", fee: "₹ 6,500", uploads: 1, kit: 1 },
+  { type: "Student", fee: "₹ 7,000", uploads: 1, kit: 1 },
+  { type: "IEEE Faculty", fee: "₹ 8,000", uploads: 2, kit: 1 },
+  { type: "Faculty", fee: "₹ 9,000", uploads: 2, kit: 1 },
+  { type: "IEEE Industry Participant", fee: "₹ 11,000", uploads: 2, kit: 1 },
+  { type: "Industry Participant", fee: "₹ 12,000", uploads: 2, kit: 1 },
+  { type: "IEEE Foreign Participant", fee: "USD $200", uploads: 2, kit: 1 },
+  { type: "Foreign Participant", fee: "USD $250", uploads: 2, kit: 1 }
+];
 
 const RegistrationPage = () => {
   return (
-    <div style={styles.pageContainer}>
-      <div style={styles.container}>
-        <h2 style={styles.heading}>Conference Registration</h2>
-        
-        <div style={styles.infoContainer}>
-          <p style={styles.text}>
-            For detailed information on registration fees and types, please refer to the document below.
-          </p>
-          <a href={registrationDoc} download style={styles.link}>
-            Download Registration Fee Details
-          </a>
-        </div>
-      </div>
-      <footer style={styles.footer}>
-        <p style={styles.footerText}>© 2024 Conference Organization</p>
-      </footer>
-    </div>
-  );
-};
+    <>
+      <Box
+        className="venue-page"
+        style={{ backgroundImage: `url(${venue_background})` }}
+      >
+        <div className="page-container">
+          <div className="container">
+            <Text color="#e72f0e" className="heading">Conference Registration</Text>
 
-const styles = {
-  pageContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '70vh', // Ensures the page takes full height
-  },
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: '40px',
-    maxWidth: '500px',
-    margin: '50px auto',
-    border: '2px solid #e0e0e0',
-    borderRadius: '10px',
-    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#f9f9f9',
-    flexGrow: 1, // Ensures the content takes up remaining space
-  },
-  heading: {
-    marginBottom: '20px',
-    fontSize: '26px',
-    color: '#333',
-    fontWeight: 'bold',
-  },
-  infoContainer: {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: '#fff',
-    borderRadius: '8px',
-    border: '1px solid #e0e0e0',
-    boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)',
-  },
-  text: {
-    marginBottom: '15px',
-    fontSize: '18px',
-    color: '#555',
-    lineHeight: '1.5',
-  },
-  link: {
-    fontSize: '18px',
-    color: '#007bff',
-    textDecoration: 'none',
-    fontWeight: '500',
-    padding: '10px 15px',
-    borderRadius: '5px',
-    border: '1px solid #007bff',
-    transition: 'background-color 0.3s, color 0.3s',
-    cursor: 'pointer',
-  },
-  linkHover: {
-    backgroundColor: '#007bff',
-    color: '#fff',
-  },
-  footer: {
-    textAlign: 'center',
-    padding: '10px',
-    backgroundColor: '#333',
-    color: '#fff',
-    marginTop: 'auto', // Pushes the footer to the bottom of the page
-  },
-  footerText: {
-    fontSize: '14px',
-  },
+            <div className="info-container">
+              <p className="text">
+                Registration for the conference will commence soon.
+              </p>
+
+              <Table variant="striped" size="lg" className="table">
+                <Thead>
+                  <Tr>
+                    <Th textAlign="centre" className="table-heading">Registration Type</Th>
+                    <Th textAlign="centre" className="table-heading">Registration Fee</Th>
+                    <Th textAlign="centre" className="table-heading">Maximum Number of Paper Uploads</Th>
+                    <Th textAlign="centre" className="table-heading">Registration Kit, Tea, Banquet Tickets</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  {registrationData.map((registration, index) => (
+                    <Tr key={index}>
+                      <Td>{registration.type}</Td>
+                      <Td>{registration.fee}</Td>
+                      <Td>{registration.uploads}</Td>
+                      <Td>{registration.kit}</Td>
+                    </Tr>
+                  ))}
+                </Tbody>
+              </Table>
+
+              <div className="notes-container">
+                <p className="note-text">
+                  <strong>Note:</strong>
+                </p>
+                <ul className="note-list">
+                  <li>While authors can present their papers online, they will have to pay a full registration fee as per the above rates. The kits, tea, and banquet will not be covered. Authors are therefore encouraged to participate in person.</li>
+                  <li>Non-Indian participants must pay the IEEE or Non-IEEE foreign fee.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </Box>
+    </>
+  );
 };
 
 export default RegistrationPage;

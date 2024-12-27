@@ -1,0 +1,120 @@
+/* RegistrationPage.css */
+
+/* Page container styling */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    /* Ensures the page takes full height */
+}
+
+/* Main container for content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    /* Increased width for the table */
+    margin: 50px auto;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    flex-grow: 1;
+    /* Ensures the content takes up remaining space */
+}
+
+/* Heading styling */
+.heading {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Info section styling */
+.info-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+/* Text styling */
+.text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Table styling */
+.table {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid #ccc;
+    /* Full border around the table */
+    border-collapse: collapse;
+    background-color: #f1f1f1;
+    /* Light gray background for the table */
+}
+
+/* Table header styling */
+.table-heading {
+
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    /* Border between header and content */
+    background-color: #e0e0e0;
+    /* Light gray background for header */
+    padding: 12px;
+    /* Adds padding for better spacing */
+}
+
+/* Table cell styling */
+.table td {
+    text-align: center;
+    /* Ensures content is centered */
+    padding: 12px;
+    /* Adds padding to cells for better readability */
+    font-size: 16px;
+    vertical-align: middle;
+    /* Aligns text vertically in the center */
+}
+
+/* Notes section styling */
+.notes-container {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+}
+
+.note-text {
+    font-weight: bold;
+}
+
+.note-list {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+    /* Pushes the footer to the bottom of the page */
+}
+
+.footer-text {
+    font-size: 14px;
+}
