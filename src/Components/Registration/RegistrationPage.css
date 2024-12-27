@@ -1,7 +1,7 @@
 /* RegistrationPage.css */
 
 /* Page container styling */
-.page-container {
+.registration-page-container {
     display: flex;
     flex-direction: column;
     min-height: 70vh;
@@ -9,7 +9,7 @@
 }
 
 /* Main container for content */
-.container {
+.registration-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 /* Heading styling */
-.heading {
+.registration-heading {
     margin-bottom: 20px;
     font-size: 26px;
     color: #333;
@@ -34,7 +34,7 @@
 }
 
 /* Info section styling */
-.info-container {
+.registration-info-container {
     text-align: center;
     padding: 20px;
     background-color: #fff;
@@ -45,7 +45,7 @@
 }
 
 /* Text styling */
-.text {
+.registration-text {
     margin-bottom: 20px;
     font-size: 18px;
     color: #555;
@@ -53,7 +53,7 @@
 }
 
 /* Table styling */
-.table {
+.registration-table {
     margin-bottom: 20px;
     width: 100%;
     border: 2px solid #ccc;
@@ -64,8 +64,7 @@
 }
 
 /* Table header styling */
-.table-heading {
-
+.registration-table-heading {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -78,7 +77,7 @@
 }
 
 /* Table cell styling */
-.table td {
+.registration-table-cell {
     text-align: center;
     /* Ensures content is centered */
     padding: 12px;
@@ -89,24 +88,24 @@
 }
 
 /* Notes section styling */
-.notes-container {
+.registration-notes-container {
     margin-top: 20px;
     text-align: left;
     font-size: 16px;
     color: #555;
 }
 
-.note-text {
+.registration-note-text {
     font-weight: bold;
 }
 
-.note-list {
+.registration-note-list {
     padding-left: 20px;
     list-style-type: disc;
 }
 
 /* Footer styling */
-.footer {
+.registration-footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
@@ -115,6 +114,6 @@
     /* Pushes the footer to the bottom of the page */
 }
 
-.footer-text {
+.registration-footer-text {
     font-size: 14px;
 }
