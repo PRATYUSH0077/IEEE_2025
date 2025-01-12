@@ -12,7 +12,7 @@ const ImportantDates = () => {
     },
     {
       date: '7th January, 2025',
-      newDate: '14th January, 2025',
+      newDate: '16th January, 2025',
       // finalDate: '2nd December, 2024',
       event: 'Acceptance of selected papers'
     },
