@@ -1,75 +1,53 @@
-import React from 'react';
-import venue_background from '../../assets/venue_background.jpg';
-import { Text, Box, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
-import './RegistrationPage.css'; // Importing the CSS file
+import React, { useState } from "react";
+import venue_background from "../../assets/venue_background.jpg";
+import "./RegistrationPage.css";
 
-// Registration data list
-const registrationData = [
-  { type: "IEEE Student", fee: "₹ 6,500", uploads: 1, kit: 1 },
-  { type: "Student", fee: "₹ 7,000", uploads: 1, kit: 1 },
-  { type: "IEEE Faculty", fee: "₹ 8,000", uploads: 2, kit: 1 },
-  { type: "Faculty", fee: "₹ 9,000", uploads: 2, kit: 1 },
-  { type: "IEEE Industry Participant", fee: "₹ 11,000", uploads: 2, kit: 1 },
-  { type: "Industry Participant", fee: "₹ 12,000", uploads: 2, kit: 1 },
-  { type: "IEEE Foreign Participant", fee: "USD $200", uploads: 2, kit: 1 },
-  { type: "Foreign Participant", fee: "USD $250", uploads: 2, kit: 1 }
-];
+import Step_1 from "./Components/Step_1";
+import Step_2 from "./Components/Step_2";
+import Step_3 from "./Components/Step_3";
+import Step_4 from "./Components/Step_4";
+import Step_5 from "./Components/Step_5";
+import Step_6 from "./Components/Step_6";
+import Step_7 from "./Components/Step_7";
 
 const RegistrationPage = () => {
+  const [activeTab, setActiveTab] = useState("step_1");
+
+  const tabs = [
+    { id: "step_1", label: "Step 1: Registration Fees", component: <Step_1 /> },
+    { id: "step_2", label: "Step 2: Payment Details", component: <Step_2 /> },
+    { id: "step_3", label: "Step 3: Copyright Form", component: <Step_3 /> },
+    { id: "step_4", label: "Step 4: Final Paper", component: <Step_4 /> },
+    { id: "step_5", label: "Step 5: CRC Check", component: <Step_5 /> },
+    { id: "step_6", label: "Step 6: CRC Upload", component: <Step_6 /> },
+    { id: "step_7", label: "Step 7: Final Registration Form", component: <Step_7 /> },
+  ];
+
   return (
-    <>
-      <Box
-        className="registration-venue-page"
-        style={{ backgroundImage: `url(${venue_background})` }}
-      >
-        <div className="registration-page-container">
-          <div className="registration-container">
-            <Text color='#e72f0e' className="registration-heading">Conference Registration</Text>
+    <div
+      className="registration-venue-page"
+      style={{ backgroundImage: `url(${venue_background})` }}
+    >
+      <div className="registration-page-container">
+        <nav className="registration-tab-nav">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`registration-tab-button ${activeTab === tab.id ? "active" : ""
+                }`}
+              onClick={() => setActiveTab(tab.id)}
+            // style={{ fontWeight: "bold" }}
 
-            <div className="registration-info-container">
-              <p className="registration-text">
-                Registration for the conference will commence soon.
-              </p>
-
-              <Table variant="striped" size="lg" className="registration-table">
-                <Thead>
-                  <Tr>
-                    <Th className="registration-table-heading">Registration Type</Th>
-                    <Th className="registration-table-heading">Registration Fee</Th>
-                    <Th className="registration-table-heading">Maximum Number of Paper Uploads</Th>
-                    <Th className="registration-table-heading">Registration Kit, Tea, Banquet Tickets</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  {registrationData.map((registration, index) => (
-                    <Tr key={index}>
-                      <Td className="registration-table-cell">{registration.type}</Td>
-                      <Td className="registration-table-cell">{registration.fee}</Td>
-                      <Td className="registration-table-cell">{registration.uploads}</Td>
-                      <Td className="registration-table-cell">{registration.kit}</Td>
-                    </Tr>
-                  ))}
-                </Tbody>
-              </Table>
-
-              <div className="registration-notes-container">
-                <p className="registration-note-text">
-                  <strong>Note:</strong>
-                </p>
-                <ul className="registration-note-list">
-                  <li>While authors can present their papers online, they will have to pay a full registration fee as per the above rates. The kits, tea, and banquet will not be covered. Authors are therefore encouraged to participate in person.</li>
-                  <li>Non-Indian participants must pay the IEEE or Non-IEEE foreign fee.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* <footer className="registration-footer">
-            <p className="registration-footer-text">© 2024 Conference Organization</p>
-          </footer> */}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </nav>
+        <div className="registration-tab-content">
+          {tabs.find((tab) => tab.id === activeTab)?.component}
         </div>
-      </Box>
-    </>
+      </div>
+    </div>
   );
 };
 

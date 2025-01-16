@@ -1,119 +1,155 @@
-/* RegistrationPage.css */
-
-/* Page container styling */
-.registration-page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 70vh;
-    /* Ensures the page takes full height */
-}
-
-/* Main container for content */
-.registration-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    max-width: 900px;
-    /* Increased width for the table */
-    margin: 50px auto;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f9f9f9;
-    flex-grow: 1;
-    /* Ensures the content takes up remaining space */
 }
 
-/* Heading styling */
-.registration-heading {
-    margin-bottom: 20px;
-    font-size: 26px;
-    color: #333;
-    font-weight: bold;
+.registration-venue-page {
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
-/* Info section styling */
-.registration-info-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
+/* Container Styling */
+.registration-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-/* Text styling */
-.registration-text {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-}
-
-/* Table styling */
-.registration-table {
-    margin-bottom: 20px;
-    width: 100%;
-    border: 2px solid #ccc;
-    /* Full border around the table */
-    border-collapse: collapse;
-    background-color: #f1f1f1;
-    /* Light gray background for the table */
-}
-
-/* Table header styling */
-.registration-table-heading {
-    font-size: 18px;
+/* Heading Styling */
+.registration-heading {
+    font-size: 24px;
     font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
     text-align: center;
-    border-bottom: 2px solid #333;
-    /* Border between header and content */
-    background-color: #e0e0e0;
-    /* Light gray background for header */
-    padding: 12px;
-    /* Adds padding for better spacing */
 }
 
-/* Table cell styling */
-.registration-table-cell {
-    text-align: center;
-    /* Ensures content is centered */
-    padding: 12px;
-    /* Adds padding to cells for better readability */
+/* Tab Navigation Styling */
+.registration-tab-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.registration-tab-button {
+    padding: 10px 20px;
     font-size: 16px;
-    vertical-align: middle;
-    /* Aligns text vertically in the center */
+    color: #555;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Notes section styling */
+.registration-tab-button:hover {
+    color: #e72f0e;
+}
+
+.registration-tab-button.active {
+    font-weight: bold;
+    color: #e72f0e;
+    border-bottom: 2px solid #e72f0e;
+}
+
+/* Tab Content Styling */
+.registration-tab-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Table Styling */
+.registration-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    background-color: #fff;
+}
+
+.registration-table th,
+.registration-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.registration-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.registration-table td {
+    font-size: 16px;
+}
+
+/* Notes Section Styling */
 .registration-notes-container {
     margin-top: 20px;
-    text-align: left;
-    font-size: 16px;
-    color: #555;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .registration-note-text {
     font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .registration-note-list {
-    padding-left: 20px;
-    list-style-type: disc;
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+    font-size: 16px;
 }
 
-/* Footer styling */
-.registration-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    margin-top: auto;
-    /* Pushes the footer to the bottom of the page */
+/* Link Styling */
+a {
+    color: #e72f0e;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.registration-footer-text {
-    font-size: 14px;
+a:hover {
+    color: #b82208;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-page-container {
+        padding: 15px;
+    }
+
+    .registration-tab-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .registration-heading {
+        font-size: 20px;
+    }
+
+    .registration-table th,
+    .registration-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .registration-tab-content {
+        padding: 15px;
+    }
 }
