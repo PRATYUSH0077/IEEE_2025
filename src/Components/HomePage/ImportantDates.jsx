@@ -17,7 +17,7 @@ const ImportantDates = () => {
       event: 'Acceptance of selected papers'
     },
     // { date: '7th January, 2025', event: 'Acceptance of selected papers' },
-    { date: '31st January, 2025', event: 'Final Paper Submission and Registration Deadline' },
+    { date: '27th January, 2025', event: 'Final Paper Submission and Registration Deadline' },
     { date: '21-23 February, 2025', event: 'Conference Dates' },
   ];
 
