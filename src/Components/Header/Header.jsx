@@ -26,6 +26,7 @@ const Header = () => {
     { to: '/submission', text: 'Submission' },
     { to: '/registration', text: 'Registration' },
     { to: '/venue', text: 'Venue' },
+    { to: '/ConferenceSpeakers', text: 'Events' },
     // { to: '/contact', text: 'Contact' },
   ];
 

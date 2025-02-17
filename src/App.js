@@ -10,6 +10,7 @@ import Submission from './Components/Submission/Submission';
 import Tracks from './Components/Tracks/Tracks';
 import CommitteePage from './Components/Committee/Committee';
 import Registration from './Components/Registration/Registration';
+import ConferenceSpeakers from "./Components/Speakers/ConferenceSpeakers";
 const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/tracks" element={<Tracks />} />
           <Route path="/committee" element={<CommitteePage />} />
           <Route path="/registration" element={<Registration/>} />
+          <Route path="/ConferenceSpeakers" element={<ConferenceSpeakers/>} />
 
 
           {/* Add other routes here */}
