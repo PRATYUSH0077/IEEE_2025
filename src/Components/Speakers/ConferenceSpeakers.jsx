@@ -24,7 +24,7 @@ const BioSection = ({ image, name, bio }) => (
 
 const EventPage = () => {
   return (
-    <Box p={5} maxW="1000px" mx="auto">
+    <Box className="event-page" p={5} maxW="1000px" mx="auto">
       {/* Chief Guest Section */}
       <VStack align="start" spacing={4} mb={10}>
         <Heading as="h1" size="xl">Chief Guest</Heading>
